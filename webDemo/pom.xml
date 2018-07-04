@@ -25,22 +25,6 @@
 		<thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
 		<thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>
 	</properties>
-	
-	<repositories>
-		<repository>
-			<id>nexus-releases</id>
-			<url>http://10.254.245.76:8081/repository/maven-releases/</url>
-		</repository>
-		<repository>
-			<id>3rdparty</id>
-			<url>https://maven.atlassian.com/3rdparty/</url>
-		</repository>
-		<repository>
-			<id>maven2</id>
-			<url>http://maven.jahia.org/maven2/</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -76,28 +60,32 @@
 			<artifactId>commonLib</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.2.0</version>
+		</dependency>
 		<!-- ST dependency -->
 		<dependency>
-			<groupId>st3</groupId>
+			<groupId>tdem-standard</groupId>
 			<artifactId>st3-api</artifactId>
-			<version>1.1.9</version>
+			<version>1.1.9-RELEASE</version>
 		</dependency>
 
 		<dependency>
-			<groupId>st3</groupId>
+			<groupId>tdem-standard</groupId>
 			<artifactId>st3-batch</artifactId>
 			<version>1.1.14-RELEASE</version>
 		</dependency>
 
 		<dependency>
-			<groupId>st3</groupId>
+			<groupId>tdem-standard</groupId>
 			<artifactId>st3-hibernate-jpa</artifactId>
 			<version>2.1-api-was-1.0.0-RELEASE</version>
 		</dependency>
 
 		<dependency>
-			<groupId>sc2</groupId>
+			<groupId>tdem-standard</groupId>
 			<artifactId>sc2-client-java</artifactId>
 			<version>1.0.10-RELEASE</version>
 		</dependency>

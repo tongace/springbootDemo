@@ -59,28 +59,7 @@
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-	<!-- Profiles configuration -->
-	<profiles>
-		<profile>
-			<id>PU</id>
-			<!-- The development profile is active by default -->
-			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
-			<properties>
-				<log.path>/home/chairat</log.path>
-				<log.level>DEBUG</log.level>
-			</properties>
-		</profile>
-		<profile>
-			<id>IFT</id>
-			<!-- The development profile is active by default -->
-			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
-			<properties>
-				<log.path>/home/ift</log.path>
-				<log.level>INFO</log.level>
-			</properties>
-		</profile>
-	</profiles>
-	<!-- end Profiles configuration -->
+
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>

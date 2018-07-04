@@ -89,15 +89,25 @@
 			<artifactId>sc2-client-java</artifactId>
 			<version>1.0.10-RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>15.0</version>
+		</dependency>
 	</dependencies>
 	<!-- Profiles configuration -->
 	<profiles>
 		<profile>
 			<id>OFFLINE</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<properties>
+				<!-- springboot config -->
+				<spring.profiles.active>OFFLINE</spring.profiles.active>
 				<!-- log -->
 				<log.path>/home/chairat</log.path>
-				<log.level>DEBUG</log.level>
+				<log.level>INFO</log.level>
 				<!-- SC2 client properties -->
 				<sc2client.systemDn>BXP.tmap-em.toyota.co.th.asia</sc2client.systemDn>
 				<sc2client.applicationHomeUrl>https://localhost:9080/demo/home</sc2client.applicationHomeUrl>

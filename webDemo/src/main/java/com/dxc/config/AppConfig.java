@@ -15,7 +15,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 @Configuration
 @PropertySource({"classpath:demo-application.properties"})
-@ImportResource({"classpath:tdem-application-config.xml"})
+@ImportResource({"classpath:batch-application-config.xml"})
 public class AppConfig {
 	@Bean
 	public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {

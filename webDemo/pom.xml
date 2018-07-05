@@ -125,6 +125,16 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.7</version>
 		</dependency>
+		<dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>2.0.1</version>
+		</dependency>
 	</dependencies>
 	<!-- Profiles configuration -->
 	<profiles>
@@ -229,9 +239,9 @@
 				<sc2client.sc2.home.url>http://sc2-dev.tmap-em.toyota-asia.com/</sc2client.sc2.home.url>
 				<sc2client.cas.logout.url>https://sc2-dev.tmap-em.toyota-asia.com/cas/logout</sc2client.cas.logout.url>
 				<!-- SC2 filter properties -->
-				<sc2filter.casServerUrlPrefix>http://localhost:8080/cas</sc2filter.casServerUrlPrefix>
-				<sc2filter.casServerLoginUrl>http://localhost:8080/cas/login</sc2filter.casServerLoginUrl>
-				<sc2filter.serverName>http://localhost:8080</sc2filter.serverName>
+				<sc2filter.casServerUrlPrefix>http://sc2-dev.tmap-em.toyota-asia.com/cas</sc2filter.casServerUrlPrefix>
+				<sc2filter.casServerLoginUrl>https://sc2-dev.tmap-em.toyota-asia.com/cas/login</sc2filter.casServerLoginUrl>
+				<sc2filter.serverName>http://10.254.41.81:9081</sc2filter.serverName>
 				<!-- standard properties -->
 				<standard.projectCode>BX0</standard.projectCode>
 				<standard.homepath>/clouddata/home/bx0user00</standard.homepath>

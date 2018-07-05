@@ -1,4 +1,4 @@
-package th.co.toyota.config;
+package com.dxc.config;
 
 import java.util.Arrays;
 

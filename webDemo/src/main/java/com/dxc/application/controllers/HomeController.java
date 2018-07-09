@@ -23,12 +23,12 @@ public class HomeController {
 		logger.info("simpleUser.getCompany() >>>> " + simpleUser.getCompany());
 		logger.info("simpleUser.getLocation() >>>> " + simpleUser.getLocation());
 		logger.info("simpleUser.getUserId() >>>> " + simpleUser.getUserId());
-		return "home";
+		return "home.html";
 	}
 	
 	@GetMapping("/home/js/home.js")
 	public String js() {
-		logger.debug("666666666666");
-		return "home";
+		logger.debug("777777");
+		return "home.js";
 	}
 }

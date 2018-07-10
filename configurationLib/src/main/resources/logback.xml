@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="false">
-	<contextName>webDemo</contextName>
+	<contextName>demo</contextName>
 
 	<appender name="APPLOGFILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">

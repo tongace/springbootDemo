@@ -9,6 +9,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan
 @EnableTransactionManagement
 @PropertySource(value = { "classpath:data-access.properties" })
-@ImportResource(value = { "classpath:app-jdbc-datasource.xml","batch-jdbc-datasource.xml" })
+@ImportResource(value = { "classpath:app-jdbc-datasource.xml","classpath:batch-jdbc-datasource.xml" })
 public class DatabaseConfig {
 }

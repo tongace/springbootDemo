@@ -71,24 +71,24 @@
 			<properties>
 				<!-- log -->
 				<log.path>/opt/jboss/jboss-eap-7.0/standalone/log</log.path>
-				<log.level>DEBUG</log.level>
+				<log.level>INFO</log.level>
 				<!-- SC2 client properties -->
-				<sc2client.systemDn>BXP.tmap-em.toyota.co.th.asia</sc2client.systemDn>
-				<sc2client.applicationHomeUrl>https://10.254.41.81:9080/wBX0/home</sc2client.applicationHomeUrl>
+				<sc2client.systemDn>DXC.tmap-em.toyota.co.th.asia</sc2client.systemDn>
+				<sc2client.applicationHomeUrl>http://10.254.245.76:9080/demo/home</sc2client.applicationHomeUrl>
 				<sc2client.rest.rootServiceUrl>http://sc2-dev.tmap-em.toyota-asia.com/main/</sc2client.rest.rootServiceUrl>
 				<sc2client.rest.resource.userInfo>simple/authorize/user/ticket/{ticketId}/</sc2client.rest.resource.userInfo>
 				<sc2client.rest.resource.systemAcl>simple/authorize/systems/ticket/{ticketId}/system/{systemDn}/</sc2client.rest.resource.systemAcl>
 				<sc2client.sc2.home.url>http://sc2-dev.tmap-em.toyota-asia.com/</sc2client.sc2.home.url>
 				<sc2client.cas.logout.url>https://sc2-dev.tmap-em.toyota-asia.com/cas/logout</sc2client.cas.logout.url>
 				<!-- SC2 filter properties -->
-				<sc2filter.casServerUrlPrefix>http://localhost:8080/cas</sc2filter.casServerUrlPrefix>
-				<sc2filter.casServerLoginUrl>http://localhost:8080/cas/login</sc2filter.casServerLoginUrl>
-				<sc2filter.serverName>http://localhost:8080</sc2filter.serverName>
+				<sc2filter.casServerUrlPrefix>http://sc2-dev.tmap-em.toyota-asia.com/cas</sc2filter.casServerUrlPrefix>
+				<sc2filter.casServerLoginUrl>https://sc2-dev.tmap-em.toyota-asia.com/cas/login</sc2filter.casServerLoginUrl>
+				<sc2filter.serverName>http://10.254.245.76:9080</sc2filter.serverName>
 				<!-- standard properties -->
-				<standard.projectCode>BX0</standard.projectCode>
-				<standard.homepath>/clouddata/home/bx0user00</standard.homepath>
+				<standard.projectCode>DXC</standard.projectCode>
+				<standard.homepath>/opt/jboss</standard.homepath>
 				<standard.mail.smtp.host>172.26.8.14</standard.mail.smtp.host>
-				<standard.mail.fromemail>espi_dev@tdem.toyota-asia.com</standard.mail.fromemail>
+				<standard.mail.fromemail>dxc_dev@tdem.toyota-asia.com</standard.mail.fromemail>
 				<standard.mail.toemail>chairat_sam_hp@tdem.toyota-asia.com</standard.mail.toemail>
 				<standard.mail.ccemail></standard.mail.ccemail>
 				<!-- database -->
@@ -110,23 +110,23 @@
 			<!-- The development profile is active by default -->
 			<!-- <activation> <activeByDefault>true</activeByDefault> </activation> -->
 			<properties>
-				<log.path>/clouddata/home/bx0user01/log</log.path>
+				<log.path>/home/chairat</log.path>
 				<log.level>DEBUG</log.level>
 				<!-- SC2 client properties -->
 				<sc2client.systemDn>DXC.tmap-em.toyota.co.th.asia</sc2client.systemDn>
-				<sc2client.applicationHomeUrl>http://10.254.41.81:9081/demo/home</sc2client.applicationHomeUrl>
+				<sc2client.applicationHomeUrl>http://10.254.168.150:8080/demo/home</sc2client.applicationHomeUrl>
 				<sc2client.rest.rootServiceUrl>http://sc2-dev.tmap-em.toyota-asia.com/main/</sc2client.rest.rootServiceUrl>
-				<sc2client.rest.resource.userInfo>simple/authorize/user/ticket/{ticketId}/</sc2client.rest.resource.userInfo>
-				<sc2client.rest.resource.systemAcl>simple/authorize/systems/ticket/{ticketId}/system/{systemDn}/</sc2client.rest.resource.systemAcl>
+				<sc2client.rest.resource.userInfo>simple/authorize/user/ticket/{ticketId}</sc2client.rest.resource.userInfo>
+				<sc2client.rest.resource.systemAcl>simple/authorize/systems/ticket/{ticketId}/system/{systemDn}</sc2client.rest.resource.systemAcl>
 				<sc2client.sc2.home.url>http://sc2-dev.tmap-em.toyota-asia.com/</sc2client.sc2.home.url>
 				<sc2client.cas.logout.url>https://sc2-dev.tmap-em.toyota-asia.com/cas/logout</sc2client.cas.logout.url>
 				<!-- SC2 filter properties -->
 				<sc2filter.casServerUrlPrefix>http://sc2-dev.tmap-em.toyota-asia.com/cas</sc2filter.casServerUrlPrefix>
 				<sc2filter.casServerLoginUrl>https://sc2-dev.tmap-em.toyota-asia.com/cas/login</sc2filter.casServerLoginUrl>
-				<sc2filter.serverName>http://10.254.41.81:9081</sc2filter.serverName>
+				<sc2filter.serverName>http://10.254.168.150:8080</sc2filter.serverName>
 				<!-- standard properties -->
 				<standard.projectCode>DXC</standard.projectCode>
-				<standard.homepath>/clouddata/home/bx0user01</standard.homepath>
+				<standard.homepath>/home/chairat</standard.homepath>
 				<standard.mail.smtp.host>172.26.8.14</standard.mail.smtp.host>
 				<standard.mail.fromemail>dxc_dev@tdem.toyota-asia.com</standard.mail.fromemail>
 				<standard.mail.toemail>chairat_sam_hp@tdem.toyota-asia.com</standard.mail.toemail>
@@ -134,12 +134,12 @@
 				<!-- database -->
 				<database.jdbc.driverClassName>oracle.jdbc.OracleDriver</database.jdbc.driverClassName>
 				<database.jdbc.maximumPoolSize>2</database.jdbc.maximumPoolSize>
-				<database.jdbc.url>jdbc:oracle:thin:@10.254.47.59:8521:BX0DEVT</database.jdbc.url>
+				<database.jdbc.url>jdbc:oracle:thin:@10.254.245.76:8521:XE</database.jdbc.url>
 				<database.jdbc.username>BX0USER01</database.jdbc.username>
 				<database.jdbc.password>bx0user01espi</database.jdbc.password>
-				<database.bfw.jdbc.url>jdbc:oracle:thin:@10.254.47.59:8520:BFWDEV</database.bfw.jdbc.url>
-				<database.bfw.jdbc.username>BFWUSER00</database.bfw.jdbc.username>
-				<database.bfw.jdbc.password>bfwuser00</database.bfw.jdbc.password>
+				<database.bfw.jdbc.url>jdbc:oracle:thin:@10.254.245.76:8521:XE</database.bfw.jdbc.url>
+				<database.bfw.jdbc.username>BFWUSER01</database.bfw.jdbc.username>
+				<database.bfw.jdbc.password>BFWUSER01</database.bfw.jdbc.password>
 				<database.hibernate.dialect>org.hibernate.dialect.Oracle10gDialect</database.hibernate.dialect>
 				<database.jpa.database>ORACLE</database.jpa.database>
 				<database.jpa.showSql>true</database.jpa.showSql>

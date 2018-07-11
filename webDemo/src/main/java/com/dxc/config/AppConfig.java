@@ -4,6 +4,7 @@ import javax.validation.Validator;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
@@ -16,6 +17,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 @Configuration
 @PropertySource({"classpath:demo-application.properties"})
 @ImportResource({"classpath:batch-application-config.xml"})
+@ComponentScan("com.dxc.application.services")
 public class AppConfig {
 	@Bean
 	public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {

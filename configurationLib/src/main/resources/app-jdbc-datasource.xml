@@ -29,6 +29,7 @@
 			<tx:method name="find*" read-only="true" />
 			<tx:method name="check*" read-only="true" />
 			<tx:method name="search*" read-only="true" />
+			<tx:method name="select*" read-only="true" />
 			<!-- other methods use the default transaction settings (see below) -->
 			<tx:method name="*" propagation="REQUIRED" isolation="READ_COMMITTED"
 				rollback-for="Exception" />
